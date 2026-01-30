@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Available Courses</h1>
+    <table align="center" border="1">
+      <tr align="center">
+        <th width="100">CourseID</th>
+        <th width="150">CourseName</th>
+        <th width="140">Trainer</th>
+        <th width="140">Duration in weeks</th>
+      </tr>
+      <tbody align="center" id="coursetable"></tbody>
+    </table>
+    <script>
+      window.onload = function () {
+        showCourses();
+      };
+    </script> <br>
+
+    <div class="button-container"> 
+      <a href="index.html"><button type="button" class="back-btn">Back</button></a
+      >
+    </div>
+  </body>
+</html>

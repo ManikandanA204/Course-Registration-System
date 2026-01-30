@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register a Course</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Register a Course</h1>
+    <div class="form-container">
+      <form action="http://localhost:8080/courses/registered" method="post">
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Enter Your EmailID</label>
+        <input type="email" name="emailId" id="email" required />
+
+        <label for="coursename">Select Your Course</label>
+        <select id="course" name="courseName">
+          <option value="Java Essentials">Java Essentials</option>
+          <option value="Python for ML">Python for ML</option>
+          <option value="Spring Boot">Spring Boot</option>
+          <option value="Generative AI">Generative AI</option>
+          <option value="Cloud computing">Cloud computing</option>
+        </select>
+
+        <div class="button-container">
+          <button type="submit" class="submit-btn">Submit</button>
+          <a href="index.html"><button type="button" class="back-btn">Back</button></a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
